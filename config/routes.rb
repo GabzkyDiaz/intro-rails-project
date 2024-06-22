@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  get 'light_novels/index'
-  get 'light_novels/show'
-  get 'mangas/index'
-  get 'mangas/show'
-  get 'animes/index'
-  get 'animes/show'
+  resources :animes, only: [:index, :show]
+  resources :mangas, only: [:index, :show]
+  resources :light_novels, only: [:index, :show]
+
+  root 'animes#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
