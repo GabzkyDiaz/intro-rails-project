@@ -67,7 +67,9 @@ group :test do
 end
 
 # Use httparty gem to handle API requests.
-gem 'httparty', '~> 0.13.7'
+gem 'httparty', '~> 0.22.0'
 
 # Use sidekiq for background jobs
 gem 'sidekiq', '~> 7.1', '>= 7.1.2'
+
+gem 'json', '~> 2.5'
