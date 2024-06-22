@@ -65,3 +65,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Use httparty gem to handle API requests.
+gem 'httparty', '~> 0.13.7'
