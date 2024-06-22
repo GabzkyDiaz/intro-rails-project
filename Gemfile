@@ -68,3 +68,6 @@ end
 
 # Use httparty gem to handle API requests.
 gem 'httparty', '~> 0.13.7'
+
+# Use sidekiq for background jobs
+gem 'sidekiq', '~> 7.1', '>= 7.1.2'
